@@ -1,6 +1,6 @@
+import '../styles/ShowPeople.css'
 
-
-function Result({ user }) {
+function ShowPeople({ user }) {
   
   return (
     <div className="user">
@@ -15,4 +15,4 @@ function Result({ user }) {
   );
 }
 
-export default Result;
+export default ShowPeople;
