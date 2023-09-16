@@ -3,7 +3,7 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
-import { setInput, searchPeople } from './SearchSlice'; // Import Redux actions and selectors
+import { setInput, searchPeople } from '../redux/SearchSlice'; // Import Redux actions and selectors
 
 export const SearchBar = () => {
   const input = useSelector((state) => state.search.input);
