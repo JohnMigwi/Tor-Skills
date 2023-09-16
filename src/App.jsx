@@ -5,11 +5,13 @@ import SearchBar from './components/SearchBar';
 
 function App() {
   return (
+    <div className='App'>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<SearchBar />} />   
       </Route>
     </Routes>
+    </div>
   );
 }
 
