@@ -1,18 +1,16 @@
-import { useState } from 'react'
-import './App.css'
-import SearchBar from './components/SearchBar'
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import SearchBar from './components/SearchBar';
 
 
 function App() {
- 
   return (
-    <div className='App'>
-      <div className='searchBarContainer'>
-        <SearchBar/>
-        <div>QueryResults</div>
-      </div>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<SearchBar />} />   
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
