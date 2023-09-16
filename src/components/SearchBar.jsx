@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import ShowPeople from './ShowPeople';
-import { searchPeople } from '../redux/People/PeopleSlice';
+import { searchPeople } from '../redux/people/PeopleSlice';
 import '../styles/SearchBar.css'
 
 function SearchBar() {
