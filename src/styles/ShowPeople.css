@@ -1,0 +1,50 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+    
+  p {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    margin: 0.4rem;
+  }
+    
+  .name {
+    color: white;
+  }
+    
+  .profession {
+    color: #c4c4d0;
+  }
+  
+  .user {
+    width: 50vw;
+    height: auto;
+    background-color: #383b40;
+    display: flex;
+  }
+    
+  .user:hover {
+    cursor: pointer;
+    background-color: #787880;
+  }
+    
+  .user-img {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+    
+  img {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    padding: 1.5rem;
+  }
+      
+    
