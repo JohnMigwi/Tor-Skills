@@ -9,3 +9,8 @@ body{
   width: 100vw;
   height: 100vh;
 }
+#search-icon {
+  color: royalblue;
+  padding-right: 5px;
+
+}

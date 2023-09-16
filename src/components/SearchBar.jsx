@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import ShowPeople from './ShowPeople';
+import { FaSearch } from "react-icons/fa";
 import { searchPeople } from '../redux/people/PeopleSlice';
 import '../styles/SearchBar.css'
 
@@ -41,7 +42,9 @@ function SearchBar() {
   
   return (
     <div className="search">
+      
       <section className="search-query" ref={searchQuery}>
+      <FaSearch id="search-icon" />
         <input className="search-input" type="text" value={query} onChange={handleSearch} placeholder="Search..." />
       </section>
       {showSearch && (
