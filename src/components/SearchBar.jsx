@@ -1,9 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Result from './Result';
-import { searchPeople } from '../redux/PeopleSlice';
-
-
+import ShowPeople from './ShowPeople';
+import { searchPeople } from '../redux/People/PeopleSlice';
+import '../styles/SearchBar.css'
 
 function SearchBar() {
   const [query, setQuery] = useState('');
@@ -50,7 +49,7 @@ function SearchBar() {
           { people.map((user) => (
             <div key={user.Id} className="person-info" >
               <a className="person" href={`https://torre.ai/${user.username}`}>
-                <Result user={user}/>
+                <ShowPeople user={user} />
               </a>
             </div>
           ))}
