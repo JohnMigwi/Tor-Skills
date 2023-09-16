@@ -28,8 +28,9 @@ Before you begin, make sure you have the following installed:
 
 3. Running the Development Server
     Start the development server:
-         ```bash
-        npm run dev
+
+     ```bash
+    npm run dev
 
 4. Check the terminal and Open your browser according to the localhost assigned
 
